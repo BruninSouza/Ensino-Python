@@ -18,10 +18,10 @@ jobs:
           pip install -r requirements.txt # se você tiver um arquivo requirements.txt
 
       - name: Build the book
-        run: jupyter-book build meu-livro/
+        run: jupyter-book .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: meu-livro/_build/html
+          publish_dir: _build/html
