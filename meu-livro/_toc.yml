@@ -4,11 +4,11 @@
 format: jb-book
 root: intro.md
 chapters:
-- file: conteudo/00_Introducao_python
-- file: conteudo/01_Variaveis_e_Constantes
-- file: conteudo/02_Tipos_Dados_Basicos
-- file: conteudo/03_Operadores_Basicos
-- file: conteudo/04_Interacao_Com_Usuario
-- file: conteudo/05_Tipos_Dados_Compostos
-- file: conteudo/06_Controle_de_Fluxo
+- file: ./meu-livro/conteudo/00_Introducao_python
+- file: ./meu-livro/conteudo/01_Variaveis_e_Constantes
+- file: ./meu-livro/conteudo/02_Tipos_Dados_Basicos
+- file: ./meu-livro/conteudo/03_Operadores_Basicos
+- file: ./meu-livro/conteudo/04_Interacao_Com_Usuario
+- file: ./meu-livro/conteudo/05_Tipos_Dados_Compostos
+- file: ./meu-livro/conteudo/06_Controle_de_Fluxo
 
