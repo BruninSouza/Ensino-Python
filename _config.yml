@@ -6,6 +6,7 @@ repository:
   branch: main # ou master, dependendo do nome da sua branch principal
 
 launch_buttons:
+  notebook_path: "meu-livro" 
   binderhub_url: "https://mybinder.org"  # ou a URL do seu próprio BinderHub
   colab_url: "https://colab.research.google.com"
 
