@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 00_Introducao_python.ipynb
+- file: 01_Variaveis_e_Constantes.ipynb
+- file: 02_Tipos_Dados_Basicos.ipynb
+- file: 03_Operadores_Basicos.ipynb
+- file: 04_Interacao_Com_Usuario.ipynb
+- file: 05_Tipos_Dados_Compostos.ipynb
+- file: 06_Controle_de_Fluxo.ipynb
+
