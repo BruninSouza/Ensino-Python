@@ -2,13 +2,13 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: intro.md
 chapters:
-- file: 00_Introducao_python.ipynb
-- file: 01_Variaveis_e_Constantes.ipynb
-- file: 02_Tipos_Dados_Basicos.ipynb
-- file: 03_Operadores_Basicos.ipynb
-- file: 04_Interacao_Com_Usuario.ipynb
-- file: 05_Tipos_Dados_Compostos.ipynb
-- file: 06_Controle_de_Fluxo.ipynb
+- file: conteudo/00_Introducao_python
+- file: conteudo/01_Variaveis_e_Constantes
+- file: conteudo/02_Tipos_Dados_Basicos
+- file: conteudo/03_Operadores_Basicos
+- file: conteudo/04_Interacao_Com_Usuario
+- file: conteudo/05_Tipos_Dados_Compostos
+- file: conteudo/06_Controle_de_Fluxo
 
