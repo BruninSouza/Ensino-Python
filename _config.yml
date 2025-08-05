@@ -1,35 +1,26 @@
-# Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 repository:
-  url: https://github.com/BruninSouza/Ensino-Python  # URL do seu repositório no GitHub
-  branch: main # ou master, dependendo do nome da sua branch principal
+  url: https://github.com/BruninSouza/Ensino-Python
+  branch: main
 
 launch_buttons:
   notebook_path: "meu-livro" 
-  binderhub_url: "https://mybinder.org"  # ou a URL do seu próprio BinderHub
+  binderhub_url: "https://mybinder.org"
   colab_url: "https://colab.research.google.com"
 
-title: My sample book
-author: The Jupyter Book Community
+title: Estudos Python
+author: Bruno Souza
 logo: logo.png
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
 
-# Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
 
-# Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
