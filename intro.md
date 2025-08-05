@@ -1,7 +1,7 @@
 # **Bem-vindo ao Aprenda Python!**
 
-#### **Autor**: Bruno Souza da Costa
-#### **Contatos**: [E-mail](mailto:brun.souz4@gmail.com) | [Linkedin](https://www.linkedin.com/in/bruno-souza-a74396214/) | [Github](https://github.com/BruninSouza)
+##### **Autor**: Bruno Souza da Costa
+##### **Contatos**: [E-mail](mailto:brun.souz4@gmail.com) | [Linkedin](https://www.linkedin.com/in/bruno-souza-a74396214/) | [Github](https://github.com/BruninSouza)
 
 Este material foi criado para ser o seu guia de entrada no mundo da programação com a linguagem Python. Aqui, você não apenas lerá sobre conceitos, mas também poderá interagir com o código, rodar exemplos e testar seus próprios scripts diretamente no navegador.
 
@@ -19,4 +19,5 @@ Esse projeto tem como objetivo ensinar:
 ## 📜 **Conteúdo**
 
 ```{tableofcontents}
+:maxdepth: 1
 ```
