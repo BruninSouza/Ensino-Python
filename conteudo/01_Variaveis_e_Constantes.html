@@ -182,14 +182,10 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_Introducao_python.html"><strong>Sobre a Linguagem de Programação Python</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>1. Variáveis e Constantes</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="02_Tipos_Dados_Basicos.html"><strong>2. Tipos de dados fundamentais</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="03_Operadores_Basicos.html"><strong>3. Operadores Básicos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_Interacao_Com_Usuario.html"><strong>4. Interação com o Usuário</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="05_Tipos_Dados_Compostos.html"><strong>5. Tipos de Dados Compostos</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="06_Controle_de_Fluxo.html"><strong>6. Controle de Fluxo</strong></a></li>
 </ul>
 
@@ -435,27 +431,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>1. Variáveis e Constantes</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaveis"><strong>Variáveis</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomeclatura-de-variaveis-convencoes-pep-8"><strong>Nomeclatura de Variáveis (Convenções PEP 8)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipagem-dinamica"><strong>Tipagem Dinâmica</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constantes"><strong>Constantes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-comentarios-e-uso-da-funcao-print"><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios"><strong>Comentários</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-linha-unica"><strong>Comentários de linha única</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-multiplas-linhas"><strong>Comentários de múltiplas linhas</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings"><strong>Docstrings</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-comentarios-e-uso-da-funcao-print"><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios"><strong>Comentários</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-linha-unica"><strong>Comentários de linha única</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-multiplas-linhas"><strong>Comentários de múltiplas linhas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings"><strong>Docstrings</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-print"><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-em-multiplas-linhas"><strong>Imprimir em múltiplas linhas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-usando-variaveis"><strong>Imprimir usando variáveis</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-strings-f-strings"><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-numeros-com-especificadores"><strong>Formatar números com especificadores</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-print"><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-em-multiplas-linhas"><strong>Imprimir em múltiplas linhas</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-usando-variaveis"><strong>Imprimir usando variáveis</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-strings-f-strings"><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-numeros-com-especificadores"><strong>Formatar números com especificadores</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -463,7 +456,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -581,15 +573,14 @@ Olá, mundo! &lt;class &#39;str&#39;&gt;
 <div><p><strong>Parabéns</strong>: Você terminou o módulo 01 do curso de introdução à python. Agora você conhece os conceitos de variáveis e constantes em Python, pratique o que foi ensinado no módulo e prepare-se para avançar ainda mais.</p>
 </div></blockquote>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="extra-comentarios-e-uso-da-funcao-print">
-<h1><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong><a class="headerlink" href="#extra-comentarios-e-uso-da-funcao-print" title="Link to this heading">#</a></h1>
+<section id="extra-comentarios-e-uso-da-funcao-print">
+<h2><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong><a class="headerlink" href="#extra-comentarios-e-uso-da-funcao-print" title="Link to this heading">#</a></h2>
 <section id="comentarios">
-<h2><strong>Comentários</strong><a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h2>
+<h3><strong>Comentários</strong><a class="headerlink" href="#comentarios" title="Link to this heading">#</a></h3>
 <p>Conforme os programas ficam maiores e mais complicados, eles acabam ficando <strong>difíceis de lê</strong>. Pensando nisso, podemos usar comentários para explicar o que o programa está fazendo naquele trecho de código, fazendo a leitura ficar mais fácil.</p>
 <p>Comentários são <strong>linhas de texto que o interpretador Python ignora durante a execução do código</strong>, ou seja, eles não interferem nas funcionalidades do programa.</p>
 <section id="comentarios-de-linha-unica">
-<h3><strong>Comentários de linha única</strong><a class="headerlink" href="#comentarios-de-linha-unica" title="Link to this heading">#</a></h3>
+<h4><strong>Comentários de linha única</strong><a class="headerlink" href="#comentarios-de-linha-unica" title="Link to this heading">#</a></h4>
 <p>Usamos o símbolo <code class="docutils literal notranslate"><span class="pre">#</span></code> (hashtag) no ínicio da linha para comentar. Tudo após o <code class="docutils literal notranslate"><span class="pre">#</span></code> se transformará em comentário e passará a ser ignorado pelo interpretador.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -619,7 +610,7 @@ Olá, mundo! &lt;class &#39;str&#39;&gt;
 </div>
 </section>
 <section id="comentarios-de-multiplas-linhas">
-<h3><strong>Comentários de múltiplas linhas</strong><a class="headerlink" href="#comentarios-de-multiplas-linhas" title="Link to this heading">#</a></h3>
+<h4><strong>Comentários de múltiplas linhas</strong><a class="headerlink" href="#comentarios-de-multiplas-linhas" title="Link to this heading">#</a></h4>
 <p>Caso precisemos criar um comentário que se estenda por mais de uma linha podemos usar aspas triplas (<code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> ou <code class="docutils literal notranslate"><span class="pre">'''</span></code>) para criar um comentário que se estende por várias linhas.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -641,7 +632,7 @@ Olá, mundo! &lt;class &#39;str&#39;&gt;
 </div>
 </section>
 <section id="docstrings">
-<h3><strong>Docstrings</strong><a class="headerlink" href="#docstrings" title="Link to this heading">#</a></h3>
+<h4><strong>Docstrings</strong><a class="headerlink" href="#docstrings" title="Link to this heading">#</a></h4>
 <p>São comentários de múltiplas linhas usados para documentar funções, classes e módulos. Elas são colocadas imediatamente após a definição do objeto (função, classe, módulo) e são acessadas usando <code class="docutils literal notranslate"><span class="pre">help()</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -682,7 +673,7 @@ minha_funcao(param1, param2)
 </section>
 </section>
 <section id="funcao-print">
-<h2><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong><a class="headerlink" href="#funcao-print" title="Link to this heading">#</a></h2>
+<h3><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong><a class="headerlink" href="#funcao-print" title="Link to this heading">#</a></h3>
 <p>Como vimos anteriormente, usar a função print é bem simples de se utilizar, basta declará-la e dentro dos parênteses <code class="docutils literal notranslate"><span class="pre">()</span></code> indicar os valores que devem ser exibidos.</p>
 <p>Qualquer valor pode ser impresso pela função <code class="docutils literal notranslate"><span class="pre">print()</span></code>, seja string, números, listas e etc.</p>
 <p>Sintaxe:</p>
@@ -720,7 +711,7 @@ minha_funcao(param1, param2)
 <div><p>Observe que alterando o separador e o fim, a saida no console/terminal também muda</p>
 </div></blockquote>
 <section id="imprimir-em-multiplas-linhas">
-<h3><strong>Imprimir em múltiplas linhas</strong><a class="headerlink" href="#imprimir-em-multiplas-linhas" title="Link to this heading">#</a></h3>
+<h4><strong>Imprimir em múltiplas linhas</strong><a class="headerlink" href="#imprimir-em-multiplas-linhas" title="Link to this heading">#</a></h4>
 <p>Utilizando <code class="docutils literal notranslate"><span class="pre">\n</span></code> dentro dos objetos de exibição do <code class="docutils literal notranslate"><span class="pre">print()</span></code>, podemos quebrar a linha de exibição a fazer o próximo objeto ser exibido apenas na próxima linha.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -741,7 +732,7 @@ Linha 3
 </div></blockquote>
 </section>
 <section id="imprimir-usando-variaveis">
-<h3><strong>Imprimir usando variáveis</strong><a class="headerlink" href="#imprimir-usando-variaveis" title="Link to this heading">#</a></h3>
+<h4><strong>Imprimir usando variáveis</strong><a class="headerlink" href="#imprimir-usando-variaveis" title="Link to this heading">#</a></h4>
 <p>Já vimos anteriormente que para exibir uma variável basta colocála dentro do print que ela será exibida, assim:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -757,7 +748,7 @@ Linha 3
 </div>
 </div>
 <section id="formatar-strings-f-strings">
-<h4><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong><a class="headerlink" href="#formatar-strings-f-strings" title="Link to this heading">#</a></h4>
+<h5><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong><a class="headerlink" href="#formatar-strings-f-strings" title="Link to this heading">#</a></h5>
 <p>Mas também podemos formatar strings (<code class="docutils literal notranslate"><span class="pre">f-strings</span></code>) para que possamos gerar melhores mensagens no <code class="docutils literal notranslate"><span class="pre">print()</span></code>, misturando texto com variáveis, expressões e até funções.</p>
 <p>Sintaxe:</p>
 <div class="cell docutils container">
@@ -777,7 +768,7 @@ Linha 3
 <p>Além de formatar o texto, f-strings também conseguem formatar valores númericos, podendo adicionar especificadores, como casas decimais, número de zero à esquerda, porcentagem e etc.</p>
 </section>
 <section id="formatar-numeros-com-especificadores">
-<h4><strong>Formatar números com especificadores</strong><a class="headerlink" href="#formatar-numeros-com-especificadores" title="Link to this heading">#</a></h4>
+<h5><strong>Formatar números com especificadores</strong><a class="headerlink" href="#formatar-numeros-com-especificadores" title="Link to this heading">#</a></h5>
 <ul class="simple">
 <li><p><strong>Casas decimais</strong>: ao final das chaves <code class="docutils literal notranslate"><span class="pre">{}</span></code> de uma string formatada, use dois pontos <code class="docutils literal notranslate"><span class="pre">:</span></code> para indicar que irá fazer uma especificação de formatação, em seguida o ponto <code class="docutils literal notranslate"><span class="pre">.</span></code> junto de algum número para indicar quantas casas decimais devem ser imprimidas na saída.</p></li>
 </ul>
@@ -893,6 +884,7 @@ Linha 3
 </section>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -958,27 +950,24 @@ Linha 3
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>1. Variáveis e Constantes</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaveis"><strong>Variáveis</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomeclatura-de-variaveis-convencoes-pep-8"><strong>Nomeclatura de Variáveis (Convenções PEP 8)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipagem-dinamica"><strong>Tipagem Dinâmica</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constantes"><strong>Constantes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-comentarios-e-uso-da-funcao-print"><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios"><strong>Comentários</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-linha-unica"><strong>Comentários de linha única</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-multiplas-linhas"><strong>Comentários de múltiplas linhas</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings"><strong>Docstrings</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-comentarios-e-uso-da-funcao-print"><strong>Extra: Comentários e Uso da Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios"><strong>Comentários</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-linha-unica"><strong>Comentários de linha única</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comentarios-de-multiplas-linhas"><strong>Comentários de múltiplas linhas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings"><strong>Docstrings</strong></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-print"><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-em-multiplas-linhas"><strong>Imprimir em múltiplas linhas</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-usando-variaveis"><strong>Imprimir usando variáveis</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-strings-f-strings"><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-numeros-com-especificadores"><strong>Formatar números com especificadores</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-print"><strong>Função <code class="docutils literal notranslate"><span class="pre">print()</span></code></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-em-multiplas-linhas"><strong>Imprimir em múltiplas linhas</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-usando-variaveis"><strong>Imprimir usando variáveis</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-strings-f-strings"><strong>Formatar strings <code class="docutils literal notranslate"><span class="pre">F-strings</span></code></strong></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#formatar-numeros-com-especificadores"><strong>Formatar números com especificadores</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -986,7 +975,6 @@ Linha 3
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

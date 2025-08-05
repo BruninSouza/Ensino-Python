@@ -182,14 +182,10 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_Introducao_python.html"><strong>Sobre a Linguagem de Programação Python</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_Variaveis_e_Constantes.html"><strong>1. Variáveis e Constantes</strong></a></li>
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>2. Tipos de dados fundamentais</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="03_Operadores_Basicos.html"><strong>3. Operadores Básicos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_Interacao_Com_Usuario.html"><strong>4. Interação com o Usuário</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="05_Tipos_Dados_Compostos.html"><strong>5. Tipos de Dados Compostos</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="06_Controle_de_Fluxo.html"><strong>6. Controle de Fluxo</strong></a></li>
 </ul>
 
@@ -435,7 +431,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>2. Tipos de dados fundamentais</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-numericos"><strong>Tipos numéricos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#int-inteiro"><strong>Int (inteiro)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#float-ponto-flutuante"><strong>Float (ponto flutuante)</strong></a></li>
@@ -454,24 +449,21 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-none"><strong>Tipo None</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-verificando-e-convertendo-tipos"><strong>Extra: Verificando e Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificando-o-tipo"><strong>Verificando o Tipo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-tipos"><strong>Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-numericos"><strong>Convertendo em tipos numéricos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-string-em-numeros"><strong>Convertendo String em números</strong></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-booleanos-em-numeros"><strong>Convertendo booleanos em números</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-verificando-e-convertendo-tipos"><strong>Extra: Verificando e Convertendo Tipos</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verificando-o-tipo"><strong>Verificando o Tipo</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-tipos"><strong>Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-numericos"><strong>Convertendo em tipos numéricos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-string-em-numeros"><strong>Convertendo String em números</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-booleanos-em-numeros"><strong>Convertendo booleanos em números</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-textuais"><strong>Convertendo em tipos textuais</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-booleanos"><strong>Convertendo em tipos booleanos</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-textuais"><strong>Convertendo em tipos textuais</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-booleanos"><strong>Convertendo em tipos booleanos</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -683,15 +675,14 @@ Mundo
 </div>
 </div>
 <blockquote>
-<div><h2 class="rubric" id="observacoes-ainda-ha-outros-tipos-de-dados-como-tipos-sequenciais-e-mapeamento-entretanto-iremos-ve-los-apenas-mais-tarde"><strong>Observações</strong>: Ainda há outros tipos de dados, como tipos sequenciais e mapeamento, entretanto, iremos vê-los apenas mais tarde.</h2>
+<div><p><strong>Observações</strong>: Ainda há outros tipos de dados, como tipos sequenciais e mapeamento, entretanto, iremos vê-los apenas mais tarde.</p>
 </div></blockquote>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="extra-verificando-e-convertendo-tipos">
-<h1><strong>Extra: Verificando e Convertendo Tipos</strong><a class="headerlink" href="#extra-verificando-e-convertendo-tipos" title="Link to this heading">#</a></h1>
+<section id="extra-verificando-e-convertendo-tipos">
+<h2><strong>Extra: Verificando e Convertendo Tipos</strong><a class="headerlink" href="#extra-verificando-e-convertendo-tipos" title="Link to this heading">#</a></h2>
 <p>Às vezes será necessário saber o tipo de uma variável ou conventer uma variável para outro tipo. Neste tópico abordaremos esses pontos afim de um melhor entendimento sobre os tipos de dados.</p>
 <section id="verificando-o-tipo">
-<h2><strong>Verificando o Tipo</strong><a class="headerlink" href="#verificando-o-tipo" title="Link to this heading">#</a></h2>
+<h3><strong>Verificando o Tipo</strong><a class="headerlink" href="#verificando-o-tipo" title="Link to this heading">#</a></h3>
 <p>Como já vimos anteriormente, a função embutida <code class="docutils literal notranslate"><span class="pre">type()</span></code> é usada para verificar o tipo de um <strong>objeto/variável</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -739,11 +730,11 @@ False
 <p>Ao decorrer do curso veremos como essa função pode ser útil para sabermos de um objeto pertence a uma determinada <code class="docutils literal notranslate"><span class="pre">classe</span></code>, ou verificar se a variável pertence a vários tipos usando uma <code class="docutils literal notranslate"><span class="pre">tupla</span></code>.</p>
 </section>
 <section id="convertendo-tipos">
-<h2><strong>Convertendo Tipos</strong><a class="headerlink" href="#convertendo-tipos" title="Link to this heading">#</a></h2>
+<h3><strong>Convertendo Tipos</strong><a class="headerlink" href="#convertendo-tipos" title="Link to this heading">#</a></h3>
 <p>Python oferece funções embutidas para converter valores de um tipo para outro. Isso é chamado de “<strong>type casting</strong>” ou “<strong>type conversion</strong>”.</p>
 <p>Para converter valores em Python é bem simples, basta você declarar o tipo que você deseja que a variável passe a ter como uma função (<code class="docutils literal notranslate"><span class="pre">tipo_desejado()</span></code>) e dentro do parênteses <code class="docutils literal notranslate"><span class="pre">()</span></code> indicar a <strong>variável/objeto</strong> que deve ter o valor convertido.</p>
 <section id="convertendo-em-tipos-numericos">
-<h3><strong>Convertendo em tipos numéricos</strong><a class="headerlink" href="#convertendo-em-tipos-numericos" title="Link to this heading">#</a></h3>
+<h4><strong>Convertendo em tipos numéricos</strong><a class="headerlink" href="#convertendo-em-tipos-numericos" title="Link to this heading">#</a></h4>
 <p>Para converter valores para <code class="docutils literal notranslate"><span class="pre">int</span></code> ou <code class="docutils literal notranslate"><span class="pre">float</span></code>, basta usá-los como funções, fazendo-os ficarem assim: <code class="docutils literal notranslate"><span class="pre">int()</span></code> e <code class="docutils literal notranslate"><span class="pre">float()</span></code>. Dentro dos parênteses basta colocar a <strong>variável/obejto</strong> ou valor que se deseja converter.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -773,7 +764,7 @@ False
 <div><p><strong>Curiosidades</strong>: Também é possível converter tipos booleanos e algumas strings em valores númericos. Veremos mais sobre isso adiante.</p>
 </div></blockquote>
 <section id="convertendo-string-em-numeros">
-<h4><strong>Convertendo String em números</strong><a class="headerlink" href="#convertendo-string-em-numeros" title="Link to this heading">#</a></h4>
+<h5><strong>Convertendo String em números</strong><a class="headerlink" href="#convertendo-string-em-numeros" title="Link to this heading">#</a></h5>
 <p>É possível converter strings para valores números desde que a string contenha apenas números, veja:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -823,7 +814,7 @@ False
 </div></blockquote>
 </section>
 <section id="convertendo-booleanos-em-numeros">
-<h4><strong>Convertendo booleanos em números</strong><a class="headerlink" href="#convertendo-booleanos-em-numeros" title="Link to this heading">#</a></h4>
+<h5><strong>Convertendo booleanos em números</strong><a class="headerlink" href="#convertendo-booleanos-em-numeros" title="Link to this heading">#</a></h5>
 <p>Também podemos converter valores booleanos em valores númericos, isso ocorre por que em Python, por padrão, <code class="docutils literal notranslate"><span class="pre">True</span></code> equivale a 1 e <code class="docutils literal notranslate"><span class="pre">False</span></code> equivale a 0. Veja:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -848,7 +839,7 @@ False
 </section>
 </section>
 <section id="convertendo-em-tipos-textuais">
-<h3><strong>Convertendo em tipos textuais</strong><a class="headerlink" href="#convertendo-em-tipos-textuais" title="Link to this heading">#</a></h3>
+<h4><strong>Convertendo em tipos textuais</strong><a class="headerlink" href="#convertendo-em-tipos-textuais" title="Link to this heading">#</a></h4>
 <p>Para converter valores em <code class="docutils literal notranslate"><span class="pre">string</span></code> é bem simples, basta usar a função <code class="docutils literal notranslate"><span class="pre">str()</span></code> e dentro do parênteses indicar qual variável/objeto ou valor deve-se ser convertido.</p>
 <p>Basicamente dá para converter qualquer tipo de dado em strings, veja:</p>
 <div class="cell docutils container">
@@ -878,7 +869,7 @@ True &lt;class &#39;str&#39;&gt;
 <p>Observe que os valores convertidos não possuem uma mudança visual que os diferencie de como eram antes de serem convertidos, eles apenas deixaram de possuir as propriedades que tinham anteriormente a passaram a ter características de strings.</p>
 </section>
 <section id="convertendo-em-tipos-booleanos">
-<h3><strong>Convertendo em tipos booleanos</strong><a class="headerlink" href="#convertendo-em-tipos-booleanos" title="Link to this heading">#</a></h3>
+<h4><strong>Convertendo em tipos booleanos</strong><a class="headerlink" href="#convertendo-em-tipos-booleanos" title="Link to this heading">#</a></h4>
 <p>Para converter valores em <code class="docutils literal notranslate"><span class="pre">booleano</span></code> é bem simples, basta usar a função <code class="docutils literal notranslate"><span class="pre">bool()</span></code> e dentro do parênteses indicar qual <strong>variável/objeto</strong> ou valor deve-se ser convertido.</p>
 <p>Em resumo, se a variável possuir algum valor que seja vazio, nulo ou zero, ela será convertida para <code class="docutils literal notranslate"><span class="pre">False</span></code>, do contrário será <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 <div class="cell docutils container">
@@ -927,6 +918,7 @@ False
 <blockquote>
 <div><p><strong>Parabéns</strong>: Você terminou o módulo 02 do curso de introdução à python. Agora você sabe sobre os tipos de dados básicos e está pronto para começar novos projetos, então mãos à obra.</p>
 </div></blockquote>
+</section>
 </section>
 </section>
 </section>
@@ -995,7 +987,6 @@ False
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>2. Tipos de dados fundamentais</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-numericos"><strong>Tipos numéricos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#int-inteiro"><strong>Int (inteiro)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#float-ponto-flutuante"><strong>Float (ponto flutuante)</strong></a></li>
@@ -1014,24 +1005,21 @@ False
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-none"><strong>Tipo None</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-verificando-e-convertendo-tipos"><strong>Extra: Verificando e Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificando-o-tipo"><strong>Verificando o Tipo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-tipos"><strong>Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-numericos"><strong>Convertendo em tipos numéricos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-string-em-numeros"><strong>Convertendo String em números</strong></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-booleanos-em-numeros"><strong>Convertendo booleanos em números</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-verificando-e-convertendo-tipos"><strong>Extra: Verificando e Convertendo Tipos</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verificando-o-tipo"><strong>Verificando o Tipo</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-tipos"><strong>Convertendo Tipos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-numericos"><strong>Convertendo em tipos numéricos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-string-em-numeros"><strong>Convertendo String em números</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-booleanos-em-numeros"><strong>Convertendo booleanos em números</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-textuais"><strong>Convertendo em tipos textuais</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-booleanos"><strong>Convertendo em tipos booleanos</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-textuais"><strong>Convertendo em tipos textuais</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#convertendo-em-tipos-booleanos"><strong>Convertendo em tipos booleanos</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

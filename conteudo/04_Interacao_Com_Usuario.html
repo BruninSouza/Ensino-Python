@@ -182,14 +182,10 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_Introducao_python.html"><strong>Sobre a Linguagem de Programação Python</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_Variaveis_e_Constantes.html"><strong>1. Variáveis e Constantes</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="02_Tipos_Dados_Basicos.html"><strong>2. Tipos de dados fundamentais</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="03_Operadores_Basicos.html"><strong>3. Operadores Básicos</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>4. Interação com o Usuário</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="05_Tipos_Dados_Compostos.html"><strong>5. Tipos de Dados Compostos</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="06_Controle_de_Fluxo.html"><strong>6. Controle de Fluxo</strong></a></li>
 </ul>
 
@@ -435,22 +431,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>4. Interação com o Usuário</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-input"><strong>Função <code class="docutils literal notranslate"><span class="pre">input()</span></code></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blocos-try-except"><strong>Blocos <code class="docutils literal notranslate"><span class="pre">try-except</span></code></strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observacao"><strong>Observação</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boas-praticas-de-prompts-e-feedback"><strong>Boas práticas de Prompts e Feedback</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-cenarios-de-entradas-mais-elaborados"><strong>Extra: Cenários de Entradas Mais Elaborados</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-entradas-numa-unica-linha"><strong>Multiplas entradas numa única linha</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-de-senhas"><strong>Entrada de Senhas</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-cenarios-de-entradas-mais-elaborados"><strong>Extra: Cenários de Entradas Mais Elaborados</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-entradas-numa-unica-linha"><strong>Multiplas entradas numa única linha</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-de-senhas"><strong>Entrada de Senhas</strong></a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -625,12 +617,11 @@ document.write(`
 </div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="extra-cenarios-de-entradas-mais-elaborados">
-<h1><strong>Extra: Cenários de Entradas Mais Elaborados</strong><a class="headerlink" href="#extra-cenarios-de-entradas-mais-elaborados" title="Link to this heading">#</a></h1>
+<section id="extra-cenarios-de-entradas-mais-elaborados">
+<h2><strong>Extra: Cenários de Entradas Mais Elaborados</strong><a class="headerlink" href="#extra-cenarios-de-entradas-mais-elaborados" title="Link to this heading">#</a></h2>
 <p>Aqui veremos outras maneiras de permitir que o usuário consiga inserir dados no programa além da função <code class="docutils literal notranslate"><span class="pre">input()</span></code>.</p>
 <section id="multiplas-entradas-numa-unica-linha">
-<h2><strong>Multiplas entradas numa única linha</strong><a class="headerlink" href="#multiplas-entradas-numa-unica-linha" title="Link to this heading">#</a></h2>
+<h3><strong>Multiplas entradas numa única linha</strong><a class="headerlink" href="#multiplas-entradas-numa-unica-linha" title="Link to this heading">#</a></h3>
 <p>Às vezes, podemos querer que o usuário insira vários dados de uma vez, separados por um caractere (como vírgula ou espaço). A função <code class="docutils literal notranslate"><span class="pre">split()</span></code> é perfeita para isso.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -671,7 +662,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="entrada-de-senhas">
-<h2><strong>Entrada de Senhas</strong><a class="headerlink" href="#entrada-de-senhas" title="Link to this heading">#</a></h2>
+<h3><strong>Entrada de Senhas</strong><a class="headerlink" href="#entrada-de-senhas" title="Link to this heading">#</a></h3>
 <p>A função <code class="docutils literal notranslate"><span class="pre">input()</span></code> exibe o que o usuário digita, o que não é o ideal para senhas, por exemplo. Quando precisarmos ocultar o que o usuário digita, podemos utilizar o módulo <code class="docutils literal notranslate"><span class="pre">getpass</span></code>, pois ele tenta não ecoar caracteres digitados.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -690,6 +681,7 @@ document.write(`
 <blockquote>
 <div><p><strong>Parabéns</strong>: Você terminou o módulo 04 do curso de introdução à python. Agora você sabe como permitir que seus programas recebam entradas do usuário, como tratar possíveis erros que isso pode vir a ocasionar e boas práticas de mensagens para interagir com o usuário.</p>
 </div></blockquote>
+</section>
 </section>
 </section>
 
@@ -757,22 +749,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>4. Interação com o Usuário</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funcao-input"><strong>Função <code class="docutils literal notranslate"><span class="pre">input()</span></code></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blocos-try-except"><strong>Blocos <code class="docutils literal notranslate"><span class="pre">try-except</span></code></strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observacao"><strong>Observação</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boas-praticas-de-prompts-e-feedback"><strong>Boas práticas de Prompts e Feedback</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-cenarios-de-entradas-mais-elaborados"><strong>Extra: Cenários de Entradas Mais Elaborados</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-entradas-numa-unica-linha"><strong>Multiplas entradas numa única linha</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-de-senhas"><strong>Entrada de Senhas</strong></a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-cenarios-de-entradas-mais-elaborados"><strong>Extra: Cenários de Entradas Mais Elaborados</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-entradas-numa-unica-linha"><strong>Multiplas entradas numa única linha</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entrada-de-senhas"><strong>Entrada de Senhas</strong></a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

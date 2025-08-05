@@ -182,14 +182,10 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_Introducao_python.html"><strong>Sobre a Linguagem de Programação Python</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_Variaveis_e_Constantes.html"><strong>1. Variáveis e Constantes</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="02_Tipos_Dados_Basicos.html"><strong>2. Tipos de dados fundamentais</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="03_Operadores_Basicos.html"><strong>3. Operadores Básicos</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_Interacao_Com_Usuario.html"><strong>4. Interação com o Usuário</strong></a></li>
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>5. Tipos de Dados Compostos</strong></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="06_Controle_de_Fluxo.html"><strong>6. Controle de Fluxo</strong></a></li>
 </ul>
 
@@ -435,7 +431,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>5. Tipos de Dados Compostos</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-sequencial"><strong>Tipo Sequencial</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-list"><strong>Listas (<code class="docutils literal notranslate"><span class="pre">list</span></code>)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuplas-tuple"><strong>Tuplas (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>)</strong></a></li>
@@ -451,14 +446,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-congelado-frozenset"><strong>Conjunto Congelado (<code class="docutils literal notranslate"><span class="pre">frozenset()</span></code>)</strong></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-operadores-para-tipos-compostos"><strong>Extra: Operadores para tipos compostos</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-associacao-ou-pertencimento-membership"><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-identidade"><strong>Operadores de Identidade</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objetos-na-memoria"><strong>Objetos na memória</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voltando-aos-operadores"><strong>Voltando aos operadores</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#diferenca-entre-is-e"><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-operadores-para-tipos-compostos"><strong>Extra: Operadores para tipos compostos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-associacao-ou-pertencimento-membership"><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-identidade"><strong>Operadores de Identidade</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#objetos-na-memoria"><strong>Objetos na memória</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#voltando-aos-operadores"><strong>Voltando aos operadores</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#diferenca-entre-is-e"><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong></a></li>
 </ul>
 </li>
 </ul>
@@ -466,7 +459,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -735,7 +727,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4, 5}
-{&#39;d&#39;, &#39;r&#39;, &#39;a&#39;, &#39;c&#39;, &#39;b&#39;}
+{&#39;b&#39;, &#39;d&#39;, &#39;a&#39;, &#39;c&#39;, &#39;r&#39;}
 set()
 </pre></div>
 </div>
@@ -770,12 +762,11 @@ frozenset({1, 2, 3, 4})
 <p>Observe que para armazenar os valores você precisa que eles estejam entre colchetes <code class="docutils literal notranslate"><span class="pre">[]</span></code> dentro da função <code class="docutils literal notranslate"><span class="pre">frozenset()</span></code>.</p>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="extra-operadores-para-tipos-compostos">
-<h1><strong>Extra: Operadores para tipos compostos</strong><a class="headerlink" href="#extra-operadores-para-tipos-compostos" title="Link to this heading">#</a></h1>
+<section id="extra-operadores-para-tipos-compostos">
+<h2><strong>Extra: Operadores para tipos compostos</strong><a class="headerlink" href="#extra-operadores-para-tipos-compostos" title="Link to this heading">#</a></h2>
 <p>Os operadores de tipos compostos servem para verificar se algum objeto faz parte de um coleção de itens (listas, tuplas, conjuntos) ou se duas ou mais variáveis fazem referência a mesmo objeto na memória.</p>
 <section id="operadores-de-associacao-ou-pertencimento-membership">
-<h2><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong><a class="headerlink" href="#operadores-de-associacao-ou-pertencimento-membership" title="Link to this heading">#</a></h2>
+<h3><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong><a class="headerlink" href="#operadores-de-associacao-ou-pertencimento-membership" title="Link to this heading">#</a></h3>
 <p>São usados para testar se um valor (ou sequência de valores) é encontrado dentro de uma sequência (como <code class="docutils literal notranslate"><span class="pre">strings</span></code>, <code class="docutils literal notranslate"><span class="pre">tuplas</span></code>, <code class="docutils literal notranslate"><span class="pre">conjuntos</span></code>, <code class="docutils literal notranslate"><span class="pre">chaves</span> <span class="pre">de</span> <span class="pre">dicionários</span></code>).</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -850,10 +841,10 @@ True
 </div>
 </section>
 <section id="operadores-de-identidade">
-<h2><strong>Operadores de Identidade</strong><a class="headerlink" href="#operadores-de-identidade" title="Link to this heading">#</a></h2>
+<h3><strong>Operadores de Identidade</strong><a class="headerlink" href="#operadores-de-identidade" title="Link to this heading">#</a></h3>
 <p>São usados para verificar se duas variáveis se referem ao <strong>mesmo objeto na memória</strong>. Para entendermos esse operador, primeiro precisamos entender o que é um <strong>objeto na memória</strong>.</p>
 <section id="objetos-na-memoria">
-<h3><strong>Objetos na memória</strong><a class="headerlink" href="#objetos-na-memoria" title="Link to this heading">#</a></h3>
+<h4><strong>Objetos na memória</strong><a class="headerlink" href="#objetos-na-memoria" title="Link to this heading">#</a></h4>
 <p>É um pouco estranho de entender no ínicio, mas o exemplo a seguir vai deixar mais fácil a compreensão.</p>
 <p>Exemplo:</p>
 <div class="cell docutils container">
@@ -885,9 +876,9 @@ True
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>139830856503760
-139830856503760
-139830856502448
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140132306735568
+140132306735568
+140132306734256
 </pre></div>
 </div>
 </div>
@@ -897,7 +888,7 @@ True
 <p>Em resumo, <strong>objetos na memória são os endereços lógicos onde ficam salvos os valores que atribuimos às variáveis</strong>.</p>
 </section>
 <section id="voltando-aos-operadores">
-<h3><strong>Voltando aos operadores</strong><a class="headerlink" href="#voltando-aos-operadores" title="Link to this heading">#</a></h3>
+<h4><strong>Voltando aos operadores</strong><a class="headerlink" href="#voltando-aos-operadores" title="Link to this heading">#</a></h4>
 <p>Existem apenas 2 operadores de identidade, são eles:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -943,15 +934,31 @@ True
 </div>
 </div>
 <section id="diferenca-entre-is-e">
-<h4><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong><a class="headerlink" href="#diferenca-entre-is-e" title="Link to this heading">#</a></h4>
+<h5><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong><a class="headerlink" href="#diferenca-entre-is-e" title="Link to this heading">#</a></h5>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">==</span></code> compara os <strong>valores</strong> dos operandos.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">is</span></code> compara as <strong>identidades</strong> (IDs) dos objetos (se são o mesmo objeto armazenado na memória)</p></li>
 </ul>
 <p>Resumidamente, use <code class="docutils literal notranslate"><span class="pre">is</span></code> quando precisar saber se duas variáveis são referências ao mesmo objeto, e <code class="docutils literal notranslate"><span class="pre">==</span></code> para saber se dois valores são iguais.</p>
 <blockquote>
-<div><p><strong>Atenção</strong>: Para <code class="docutils literal notranslate"><span class="pre">None</span></code>, é comum e idiomático usar <code class="docutils literal notranslate"><span class="pre">is</span></code>: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">minha_variavel</span> <span class="pre">is</span> <span class="pre">None</span></code>.</p>
+<div><p><strong>Atenção</strong>: Para <code class="docutils literal notranslate"><span class="pre">None</span></code>, é comum e idiomático usar <code class="docutils literal notranslate"><span class="pre">is</span></code>. Veja o exemplo:</p>
 </div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minha_variavel</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="k">if</span> <span class="n">minha_variavel</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variável vazia&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variável vazia
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 </section>
@@ -1021,7 +1028,6 @@ True
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>5. Tipos de Dados Compostos</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-sequencial"><strong>Tipo Sequencial</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#listas-list"><strong>Listas (<code class="docutils literal notranslate"><span class="pre">list</span></code>)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuplas-tuple"><strong>Tuplas (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>)</strong></a></li>
@@ -1037,14 +1043,12 @@ True
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-congelado-frozenset"><strong>Conjunto Congelado (<code class="docutils literal notranslate"><span class="pre">frozenset()</span></code>)</strong></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-operadores-para-tipos-compostos"><strong>Extra: Operadores para tipos compostos</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-associacao-ou-pertencimento-membership"><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-identidade"><strong>Operadores de Identidade</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objetos-na-memoria"><strong>Objetos na memória</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voltando-aos-operadores"><strong>Voltando aos operadores</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#diferenca-entre-is-e"><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-operadores-para-tipos-compostos"><strong>Extra: Operadores para tipos compostos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-associacao-ou-pertencimento-membership"><strong>Operadores de associação (ou Pertencimento / <code class="docutils literal notranslate"><span class="pre">Membership</span></code>)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-identidade"><strong>Operadores de Identidade</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#objetos-na-memoria"><strong>Objetos na memória</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#voltando-aos-operadores"><strong>Voltando aos operadores</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#diferenca-entre-is-e"><strong>Diferença entre <code class="docutils literal notranslate"><span class="pre">is</span></code> e <code class="docutils literal notranslate"><span class="pre">==</span></code></strong></a></li>
 </ul>
 </li>
 </ul>
@@ -1052,7 +1056,6 @@ True
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>
