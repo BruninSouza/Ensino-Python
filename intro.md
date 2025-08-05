@@ -18,6 +18,5 @@ Esse projeto tem como objetivo ensinar:
 
 ## 📜 **Conteúdo**
 
-```{tableofcontents}
-:maxdepth: 1
+```{tableofcontents}:maxdepth: 1
 ```
