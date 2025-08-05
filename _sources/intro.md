@@ -1,11 +1,23 @@
-# Welcome to your Jupyter Book
+# **Bem-vindo ao Aprenda Python!**
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+### **Autor**: Bruno Souza da Costa
+### **Contatos**: [E-mail](mailto:brun.souz4@gmail.com) | [Linkedin](https://www.linkedin.com/in/bruno-souza-a74396214/) | [Github](https://github.com/BruninSouza)
 
-Check out the content pages bundled with this sample book to see more.
+Este material foi criado para ser o seu guia de entrada no mundo da programação com a linguagem Python. Aqui, você não apenas lerá sobre conceitos, mas também poderá interagir com o código, rodar exemplos e testar seus próprios scripts diretamente no navegador.
+
+## 🎯 **Objetivos**
+Esse projeto tem como objetivo ensinar:
+
+- Lógica de Programação: Entenda como o pensamento computacional funciona.
+
+- Fundamentos da Linguagem: Domine variáveis, tipos de dados, e estruturas de controle.
+
+- Estruturas de Dados: Aprenda a manipular listas, dicionários e muito mais.
+
+## 📜 **Conteúdo**
 
 ```{tableofcontents}
 ```
+
+
+### **Preparado para começar sua jornada como desenvolvedor(a)? Vamos lá!**
