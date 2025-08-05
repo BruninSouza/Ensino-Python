@@ -19,7 +19,7 @@ latex:
     targetname: book.tex
 
 bibtex_bibfiles:
-  - references.bib
+  - docs/references.bib
 
 html:
   use_issues_button: true
