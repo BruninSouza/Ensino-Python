@@ -24,4 +24,6 @@ bibtex_bibfiles:
 html:
   use_issues_button: true
   use_repository_button: true
+  theme: dark
+  theme-light: light
   toggle_theme: true 
